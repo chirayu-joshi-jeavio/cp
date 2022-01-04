@@ -1,6 +1,7 @@
 esc - to come to command mode
 jj - alternative of 'esc'
 i - to come to insert mode
+a - to move current cursor to 1 right and come to insert mode
 G - go to the bottom of the page
 gg - go to the top of the page
 } - go to the next block of code
@@ -21,4 +22,20 @@ w - move to the next word
 b - move to the previous word
 :<number> - go to the <number>th line
 0 - move to the beginning of the line
+A - move to the end of the line and enter into insert mode
 (0w|^) - move to the starting of the line from where the characters start
+<move to curr_opening_bracket>% - to go to the corresponding closing bracket
+<move to curr_opening_bracket>d% - delete the block of code present between current opening bracket and corresponding closing bracket
+d - delete
+c - change
+dw - delete word
+cw - change word by deleting the current word and entering into insert mode
+D - delete the rest of the line from the current cursor
+C - delete the rest of the line from the current cursor and go to insert mode
+t<character> move the cursor just before first occurrence of <character>
+f<character> move the cursor on the first occurence of <character>
+dt<character> delete everything from current position of cursor to the first occurrence of <character>. (useful when you want to delete something between strings as '%' only works for brackets)
+ct<character> same as above, it additionally opens insert mode
+* - find next occurrence of current word
+<selected text>(>|<)<indent> - indent <selected text> to (right|left) by <indent> tabs
+
