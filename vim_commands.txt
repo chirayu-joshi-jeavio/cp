@@ -1,0 +1,24 @@
+esc - to come to command mode
+jj - alternative of 'esc'
+i - to come to insert mode
+G - go to the bottom of the page
+gg - go to the top of the page
+} - go to the next block of code
+{ - go to the previous block of code
+<number>(h|j|k|l) - move <number> times (left|down|up|right)
+<number>(}|{) - move <number> times (down|up) blocks of code
+yy - copy a line into the clipboard
+dd - cut a line into the clipboard
+p - paste from clipboard into the below line
+P - paste from clipboard into the above line
+u - undo
+[ctrl]r - redo
+. - do the last thing that you did
+[shift]v - go into the visual mode where you can select multiple lines
+o - enter a line below and go to insert mode
+O - enter a line above and go to insert mode
+w - move to the next word
+b - move to the previous word
+:<number> - go to the <number>th line
+0 - move to the beginning of the line
+(0w|^) - move to the starting of the line from where the characters start
